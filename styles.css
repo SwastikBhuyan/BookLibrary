@@ -1,0 +1,139 @@
+:root {
+    --lighter : #EEF0E5;
+    --light : #B6C4B6;
+    --dark : #304D30;
+    --darker : #163020;
+}
+
+body{
+    background-color: var(--lighter);
+    margin: 0;
+    position: relative;
+}
+
+.header {
+    background-color: var(--light);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+}
+
+.header > h1 {
+    margin-left: 20px;
+}
+
+.new-book {
+    margin-right: 20px;
+    height: 50px;
+    width: 150px;
+    background-color: var(--dark);
+    border-radius: 20px;
+    border: 0;
+    color: var(--lighter);
+}
+
+.zed {
+    color: var(--darker);
+}
+
+.lib {
+    color:white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.book {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0 black;
+    position: relative;
+    background-color: var(--dark);
+}
+
+.book-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+.book > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(30%) grayscale(30%);
+}
+
+.title {
+    font-size: 20px;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    font-family: sans-serif;
+    position: absolute;
+    color: white;
+}
+
+.author {
+    font-size: 16px;
+    left: 10px;
+    right: 10px;
+    top: 80px;
+    font-family: sans-serif;
+    position: absolute;
+    color: white;
+}
+
+.number-of-pages {
+    font-size: 12px;
+    left: 10px;
+    right: 10px;
+    top: 120px;
+    font-family: sans-serif;
+    position: absolute;
+    color: white;
+}
+
+.genre {
+    font-size: 12px;
+    left: 10px;
+    right: 10px;
+    top: 140px;
+    font-family: sans-serif;
+    position: absolute;
+    color: white;
+}
+
+.mark-as-read-btn {
+    font-family: sans-serif;
+    background-color: transparent;
+    border: 1px solid white;
+    left: 5px;
+    border-radius: 2px;
+    position: absolute;
+    color: white;
+    top: 90%;
+}
+
+.delete-btn {
+    font-family: sans-serif;
+    background-color: transparent;
+    border: 1px solid white;
+    left: 127px;
+    border-radius: 2px;
+    position: absolute;
+    color: white;
+    top: 90%;
+}
