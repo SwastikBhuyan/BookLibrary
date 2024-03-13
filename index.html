@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    
     <div class="header">
         <h1><span class="zed">Zed</span><span class="lib">Lib</span></h1>
         <button class="new-book">New Book</button>
@@ -85,6 +87,20 @@
                 <button class="mark-as-read-btn">MARK AS READ</button>
                 <button class="delete-btn">DELETE</button>
             </div>
+        </div>
+    </div>
+    <div class="modal close-modal">
+        <div class="modal-container">
+            <button class="close-btn">X</button>
+            <label for="new-book-title">TITLE</label>
+            <input type="text" name="new-book-title" id="new-book-title">
+            <label for="new-book-author">AUTHOR</label>
+            <input type="text" name="new-book-author" id="new-book-author">
+            <label for="new-book-pages">PAGES</label>
+            <input type="text" name="new-book-pages" id="new-book-pages">
+            <label for="new-book-genre">GENRE</label>
+            <input type="text" name="new-book-genre" id="new-book-genre">
+            <button class="submit">SUBMIT</button>
         </div>
     </div>
 </body>
